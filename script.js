@@ -6,17 +6,20 @@
    CONFIGURACIÓN GLOBAL
    Cambiar a false cuando no se acepten nuevos clientes
 ═══════════════════════════════════════════════════════════════ */
-const VIFIT_ACCEPTING_NEW_ATHLETES = true;
+const VIFIT_ACCEPTING_NEW_CLIENTS = true;
 
 /* ─── Status badge (estado de plazas) ───────────────────────── */
 (() => {
-  const badge = document.querySelector('.status-badge');
-  if (!badge) return;
-  if (VIFIT_ACCEPTING_NEW_ATHLETES) return;
+  const note = document.querySelector('.hero__note');
+  const cta  = document.querySelector('.hero__cta');
+  if (!note || VIFIT_ACCEPTING_NEW_CLIENTS) return;
 
-  badge.classList.add('status-badge--closed');
-  badge.querySelector('.status-text').textContent = 'Plazas completas · Lista de espera';
-  badge.setAttribute('href', 'mailto:vicentesanz.coach@gmail.com?subject=Lista%20de%20espera%20VIFIT');
+  note.classList.add('hero__note--closed');
+  note.querySelector('.status-text').textContent = 'Plazas completas · Lista de espera';
+  if (cta) {
+    cta.textContent = 'Apuntarme a la lista de espera';
+    cta.setAttribute('href', 'mailto:vicentesanz.coach@gmail.com?subject=Lista%20de%20espera%20VIFIT');
+  }
 })();
 
 /* ─── Smooth scroll for anchor links ────────────────────────── */

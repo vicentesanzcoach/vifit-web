@@ -7,18 +7,19 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <meta name="theme-color" content="#001933">
-  <title>VIFIT — Entrenamiento Personal Premium · Bañeres de Mariola</title>
-  <meta name="description" content="Centro de entrenamiento personal premium en Bañeres de Mariola. Máximo 5 personas por sesión, rutina 100% personalizada. Fundado por Vicente Camarasa, graduado CAFD.">
+  <meta name="theme-color" content="#111111">
+  <title>VIFIT — Entrenamiento Personal Premium · Banyeres de Mariola</title>
+  <link rel="canonical" href="https://vifit.vicentesanzcoach.com/">
+  <meta name="description" content="Centro de entrenamiento personal premium en Banyeres de Mariola (Bañeres de Mariola), Alicante. Máximo 5 personas por sesión, rutina 100% personalizada. Fundado por Vicente Camarasa, graduado CAFD.">
 
   <!-- Open Graph / Facebook / WhatsApp -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://vifit.vicentesanzcoach.com">
-  <meta property="og:title" content="VIFIT — Entrenamiento Personal Premium en Bañeres de Mariola">
+  <meta property="og:title" content="VIFIT — Entrenamiento Personal Premium en Banyeres de Mariola">
   <meta property="og:description" content="Aquí no vienes a probar. Vienes a transformarte. Centro premium con máximo 5 personas por sesión. Entrenamiento, nutrición, mentalidad, hábitos y comunidad.">
-  <meta property="og:image" content="https://vifit.vicentesanzcoach.com/img/espacio-2.jpg">
-  <meta property="og:image:width" content="1280">
-  <meta property="og:image:height" content="960">
+  <meta property="og:image" content="https://vifit.vicentesanzcoach.com/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:locale" content="es_ES">
   <meta property="og:site_name" content="VIFIT">
 
@@ -27,11 +28,41 @@
   <meta name="twitter:url" content="https://vifit.vicentesanzcoach.com">
   <meta name="twitter:title" content="VIFIT — Entrenamiento Personal Premium">
   <meta name="twitter:description" content="Aquí no vienes a probar. Vienes a transformarte. Centro premium en Bañeres de Mariola.">
-  <meta name="twitter:image" content="https://vifit.vicentesanzcoach.com/img/espacio-2.jpg">
+  <meta name="twitter:image" content="https://vifit.vicentesanzcoach.com/img/og-image.jpg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Barlow+Condensed:ital,wght@1,800&display=swap" rel="stylesheet">
+
+  <!-- Datos estructurados: negocio local -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HealthClub",
+    "name": "VIFIT",
+    "alternateName": "VIFIT — Centro de Entrenamiento Personal Premium",
+    "url": "https://vifit.vicentesanzcoach.com/",
+    "image": "https://vifit.vicentesanzcoach.com/img/og-image.jpg",
+    "logo": "https://vifit.vicentesanzcoach.com/favicon-192x192.png",
+    "telephone": "+34653656080",
+    "email": "vicentesanz.coach@gmail.com",
+    "founder": { "@type": "Person", "name": "Vicente Camarasa Sanz" },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "C/ San Jorge, 41",
+      "postalCode": "03450",
+      "addressLocality": "Banyeres de Mariola",
+      "addressRegion": "Alicante",
+      "addressCountry": "ES"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 38.7159468, "longitude": -0.6538607 },
+    "hasMap": "https://maps.app.goo.gl/rSWwjLbhjp765R5q6",
+    "sameAs": ["https://instagram.com/vicentesanz.coach"],
+    "priceRange": "€€",
+    "description": "Centro de entrenamiento personal premium en Banyeres de Mariola. Sesiones de máximo 5 personas con acompañamiento integral: entrenamiento, nutrición, mentalidad, hábitos y comunidad. Solo con cita previa."
+  }
+  </script>
+
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -45,7 +76,7 @@
         <img src="img/vifit-rotulo-isotipo-negro.svg" alt="VIFIT" class="nav__logo-img">
       </a>
       <ul class="nav__menu" id="navMenu">
-        <li><a href="#metodo" class="nav__link">VIFIT</a></li>
+        <li><a href="#metodo" class="nav__link">Método</a></li>
         <li><a href="#para-quien" class="nav__link">Para quién</a></li>
         <li><a href="#instalaciones" class="nav__link">Instalaciones</a></li>
         <li><a href="#empezar" class="nav__link">Empezar</a></li>
@@ -69,15 +100,17 @@
         <span class="hero__title-line hero__title-line--1">Aquí no vienes a probar.</span>
         <span class="hero__title-line hero__title-line--2">Vienes a transformarte.</span>
       </h1>
+      <p class="hero__subtitle">Entrenamiento personal en grupos de máximo 5 · Banyeres de Mariola, Alicante</p>
 
       <div class="hero__card" role="img" aria-label="Fachada de VIFIT en Bañeres de Mariola"></div>
 
-      <p class="hero__status">
-        <a href="https://wa.me/34653656080?text=Hola%20Vicente%2C%20me%20interesa%20VIFIT" class="hero__badge status-badge" target="_blank" rel="noopener">
+      <div class="hero__status">
+        <a href="https://wa.me/34653656080?text=Hola%20Vicente%2C%20me%20interesa%20VIFIT" class="btn btn--primary hero__cta" target="_blank" rel="noopener">Reservar valoración</a>
+        <p class="hero__note">
           <span class="status-dot" aria-hidden="true"></span>
-          <span class="status-text">Aceptamos nuevos clientes<span class="status-text__sep"> · </span><span class="status-text__sub">Plazas limitadas</span></span>
-        </a>
-      </p>
+          <span class="status-text">Aceptamos nuevos clientes · Plazas limitadas</span>
+        </p>
+      </div>
     </div>
   </section>
 
@@ -88,7 +121,8 @@
     <div class="container">
       <div class="manifiesto__inner">
         <p class="manifiesto__bold reveal">No construimos cuerpos de revista.<br>No vendemos transformaciones de un mes.</p>
-        <p class="manifiesto__regular reveal">Construimos personas más fuertes, funcionales y autónomas.<br>Esto es para gente seria que entiende que la fuerza se construye día a día, no en un mes.</p>
+        <p class="manifiesto__regular reveal">Construimos personas más fuertes, funcionales y autónomas.</p>
+        <p class="manifiesto__regular reveal">Esto es para gente seria que entiende que la fuerza se construye día a día, no en un mes.</p>
       </div>
     </div>
   </section>
@@ -128,7 +162,7 @@
             <p><strong>100% personalizado. Seguimiento diario y contacto directo</strong> con tu entrenador.</p>
           </div>
           <div class="metodo__pillar-media">
-            <img src="img/pilar-1-entrenamiento.jpg" alt="Banco y mancuernas en la sala de VIFIT" loading="lazy">
+            <picture><source type="image/webp" srcset="img/pilar-1-entrenamiento-640.webp 640w, img/pilar-1-entrenamiento-1280.webp 1280w" sizes="(max-width: 768px) 100vw, 28vw"><img src="img/pilar-1-entrenamiento.jpg" alt="Banco y mancuernas en la sala de VIFIT" loading="lazy" width="1280" height="853"></picture>
           </div>
         </li>
 
@@ -145,7 +179,7 @@
             <p>Te enseñamos a disfrutar de la comida sin privarte de nada y la estrategia más acorde a tu objetivo.</p>
           </div>
           <div class="metodo__pillar-media">
-            <img src="img/pilar-2-nutricion.jpg" alt="Plato equilibrado: pollo, patata y ensalada" loading="lazy">
+            <picture><source type="image/webp" srcset="img/pilar-2-nutricion-640.webp 640w, img/pilar-2-nutricion-1280.webp 1280w" sizes="(max-width: 768px) 100vw, 28vw"><img src="img/pilar-2-nutricion.jpg" alt="Plato equilibrado: pollo, patata y ensalada" loading="lazy" width="1280" height="853"></picture>
           </div>
         </li>
 
@@ -166,7 +200,7 @@
             </ul>
           </div>
           <div class="metodo__pillar-media">
-            <img src="img/pilar-3-mentalidad.jpg" alt="Persona reflexionando con un cuaderno junto a la ventana" loading="lazy">
+            <picture><source type="image/webp" srcset="img/pilar-3-mentalidad-640.webp 640w, img/pilar-3-mentalidad-1280.webp 1280w" sizes="(max-width: 768px) 100vw, 28vw"><img src="img/pilar-3-mentalidad.jpg" alt="Persona reflexionando con un cuaderno junto a la ventana" loading="lazy" width="1280" height="853"></picture>
           </div>
         </li>
 
@@ -183,7 +217,7 @@
             <p>Aquí empieza una forma de vida. Nos tendrás a tu lado si tú también estás dispuesto a estar contigo mismo.</p>
           </div>
           <div class="metodo__pillar-media">
-            <img src="img/pilar-4-habitos.jpg" alt="Saliendo de casa con zapatillas para caminar" loading="lazy">
+            <picture><source type="image/webp" srcset="img/pilar-4-habitos-640.webp 640w, img/pilar-4-habitos-1280.webp 1280w" sizes="(max-width: 768px) 100vw, 28vw"><img src="img/pilar-4-habitos.jpg" alt="Saliendo de casa con zapatillas para caminar" loading="lazy" width="1280" height="853"></picture>
           </div>
         </li>
 
@@ -201,7 +235,7 @@
             <p><strong>No prometemos milagros: prometemos compromiso mutuo.</strong></p>
           </div>
           <div class="metodo__pillar-media">
-            <img src="img/pilar-5-comunidad.jpg" alt="Grupo de personas caminando juntas al aire libre" loading="lazy">
+            <picture><source type="image/webp" srcset="img/pilar-5-comunidad-640.webp 640w, img/pilar-5-comunidad-1280.webp 1280w" sizes="(max-width: 768px) 100vw, 28vw"><img src="img/pilar-5-comunidad.jpg" alt="Grupo de personas caminando juntas al aire libre" loading="lazy" width="1280" height="853"></picture>
           </div>
         </li>
       </ul>
@@ -211,7 +245,7 @@
         <ul class="check__list">
           <li class="check__item reveal">
             <span class="check__icon" aria-hidden="true">
-              <svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#0071e3"/><polyline points="4.5,8.5 7,11 11.5,5.5" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#F4A000"/><polyline points="4.5,8.5 7,11 11.5,5.5" stroke="#111111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </span>
             <div>
               <strong>Atención individual real</strong>
@@ -220,7 +254,7 @@
           </li>
           <li class="check__item reveal">
             <span class="check__icon" aria-hidden="true">
-              <svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#0071e3"/><polyline points="4.5,8.5 7,11 11.5,5.5" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#F4A000"/><polyline points="4.5,8.5 7,11 11.5,5.5" stroke="#111111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </span>
             <div>
               <strong>Rutina diseñada solo para ti</strong>
@@ -229,7 +263,7 @@
           </li>
           <li class="check__item reveal">
             <span class="check__icon" aria-hidden="true">
-              <svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#0071e3"/><polyline points="4.5,8.5 7,11 11.5,5.5" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#F4A000"/><polyline points="4.5,8.5 7,11 11.5,5.5" stroke="#111111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </span>
             <div>
               <strong>Ambiente exclusivo y privado</strong>
@@ -238,7 +272,7 @@
           </li>
           <li class="check__item reveal">
             <span class="check__icon" aria-hidden="true">
-              <svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#0071e3"/><polyline points="4.5,8.5 7,11 11.5,5.5" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="8" fill="#F4A000"/><polyline points="4.5,8.5 7,11 11.5,5.5" stroke="#111111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </span>
             <div>
               <strong>Resultados medibles</strong>
@@ -260,17 +294,17 @@
       <div class="pq__grid">
         <div class="pq__card reveal">
           <div class="pq__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
-          </div>
-          <h3 class="pq__title">Empresarios y directivos</h3>
-          <p class="pq__text">Tu cuerpo y tu mente son tu mayor activo. Entrena con la misma exigencia con la que diriges tu negocio. Llega a cada reunión con tu mejor versión.</p>
-        </div>
-        <div class="pq__card reveal">
-          <div class="pq__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
           </div>
           <h3 class="pq__title">Tiempo justo, ideas claras</h3>
           <p class="pq__text">Padres, maestros, administrativos, profesionales… Personas con la vida llena pero las ideas claras: cuidar el cuerpo no es opcional. Sesiones eficientes donde cada minuto cuenta.</p>
+        </div>
+        <div class="pq__card reveal">
+          <div class="pq__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+          </div>
+          <h3 class="pq__title">Empresarios y directivos</h3>
+          <p class="pq__text">Tu cuerpo y tu mente son tu mayor activo. Entrena con la misma exigencia con la que diriges tu negocio. Llega a cada reunión con tu mejor versión.</p>
         </div>
         <div class="pq__card reveal">
           <div class="pq__icon">
@@ -304,8 +338,8 @@
           <span class="stats__label">graduado<br>Universidad de Alicante</span>
         </div>
         <div class="stats__item reveal">
-          <span class="stats__num" aria-hidden="true">∞</span>
-          <span class="stats__label stats__label--strong">Valoración inicial<br>y evaluaciones constantes</span>
+          <span class="stats__num">24h</span>
+          <span class="stats__label">tiempo máximo de respuesta<br>a tu mensaje</span>
         </div>
       </div>
       <div class="stats__subheading reveal">
@@ -341,7 +375,7 @@
       <div class="casos__grid">
         <article class="casos__card reveal">
           <span class="casos__quote" aria-hidden="true">&ldquo;</span>
-          <p class="casos__text">Entrenar con Vicente ha supuesto un antes y un después para mí. Su forma cercana, realista y totalmente personalizada me ayudó a ganar confianza y disciplina. Hoy el ejercicio forma parte de mi rutina: me siento más fuerte, sin dolores y con una mentalidad mucho más positiva. Después de tres años, puedo decir que ha sido una de las mejores inversiones que he hecho en mí mismo.</p>
+          <p class="casos__text">Entrenar con Vicente ha supuesto un antes y un después para mí. Su forma cercana, realista y totalmente personalizada me ayudó a ganar confianza y disciplina. Hoy el ejercicio forma parte de mi rutina: me siento más fuerte, sin dolores y con una mentalidad mucho más positiva. Después de dos años, puedo decir que ha sido una de las mejores inversiones que he hecho en mí mismo.</p>
           <hr class="casos__divider">
           <p class="casos__author">Juan, 54 años</p>
           <p class="casos__since">Entrenando desde hace 2 años</p>
@@ -361,6 +395,15 @@
           <p class="casos__since">Entrenando desde hace 1 año</p>
         </article>
       </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FRASE DE IMPACTO
+  ═══════════════════════════════════════════ -->
+  <section class="statement" aria-label="Frase VIFIT">
+    <div class="container">
+      <p class="statement__text reveal">Si esperas a tener tiempo para cuidarte,<br><span class="statement__accent">no lo harás nunca.</span></p>
     </div>
   </section>
 
@@ -411,13 +454,13 @@
       <p class="instalaciones__gallery-heading reveal">Conoce el espacio.</p>
       <div class="espacio__grid">
         <figure class="espacio__item espacio__item--sq reveal">
-          <img src="img/espacio-1.jpg" alt="Espacio de entrenamiento VIFIT" class="espacio__img" loading="lazy">
+          <picture><source type="image/webp" srcset="img/espacio-1-640.webp 640w, img/espacio-1-1280.webp 1280w" sizes="(max-width: 768px) 100vw, 25vw"><img src="img/espacio-1.jpg" alt="Espacio de entrenamiento VIFIT" class="espacio__img" loading="lazy" width="1280" height="960"></picture>
         </figure>
         <figure class="espacio__item espacio__item--wide reveal">
-          <img src="img/espacio-2.jpg" alt="Sala principal de VIFIT" class="espacio__img" loading="lazy">
+          <picture><source type="image/webp" srcset="img/espacio-2-640.webp 640w, img/espacio-2-1280.webp 1280w" sizes="(max-width: 768px) 100vw, 50vw"><img src="img/espacio-2.jpg" alt="Sala principal de VIFIT" class="espacio__img" loading="lazy" width="1280" height="960"></picture>
         </figure>
         <figure class="espacio__item espacio__item--sq reveal">
-          <img src="img/espacio-3.jpg" alt="Detalle del espacio VIFIT" class="espacio__img" loading="lazy">
+          <picture><source type="image/webp" srcset="img/espacio-3-640.webp 640w, img/espacio-3-1280.webp 1280w" sizes="(max-width: 768px) 100vw, 25vw"><img src="img/espacio-3.jpg" alt="Detalle del espacio VIFIT" class="espacio__img" loading="lazy" width="1280" height="960"></picture>
         </figure>
       </div>
 
@@ -481,7 +524,7 @@
           </div>
         </div>
         <div class="vicente__visual reveal">
-          <img src="img/vicente.jpg" alt="Vicente Camarasa Sanz, fundador de VIFIT" class="vicente__img" loading="lazy">
+          <picture><source type="image/webp" srcset="img/vicente-640.webp 640w, img/vicente-1280.webp 800w" sizes="(max-width: 768px) 100vw, 45vw"><img src="img/vicente.jpg" alt="Vicente Camarasa Sanz, fundador de VIFIT" class="vicente__img" loading="lazy" width="800" height="1066"></picture>
         </div>
       </div>
     </div>
@@ -498,7 +541,7 @@
         <div class="como__step reveal">
           <span class="como__num">01</span>
           <h3 class="como__title">Hablamos</h3>
-          <p class="como__text">Escríbeme por WhatsApp o rellena el formulario. Te respondo personalmente en menos de 24h.</p>
+          <p class="como__text">Escríbeme por WhatsApp. Te respondo personalmente en menos de 24h.</p>
         </div>
         <div class="como__step reveal">
           <span class="como__num">02</span>
@@ -596,6 +639,26 @@
           </div>
         </div>
 
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            <span>¿Cuánto cuesta?</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__a" role="region">
+            <p>Depende del plan y de la frecuencia semanal. Te lo explico con detalle y sin compromiso en la valoración inicial, para que decidas con toda la información.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            <span>¿Cuál es el horario?</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__a" role="region">
+            <p>Solo con cita previa. Las franjas de mañana y tarde se acuerdan contigo según tu disponibilidad. Escríbeme por WhatsApp y buscamos hueco.</p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -624,7 +687,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 7l10 6 10-6"/></svg>
           </span>
           <span class="contacto__card-label">Email</span>
-          <span class="contacto__card-value">vicentesanz.coach@gmail.com</span>
+          <span class="contacto__card-value contacto__card-value--email">vicentesanz.coach@gmail.com</span>
         </a>
 
         <a href="https://wa.me/34653656080" class="contacto__card reveal" target="_blank" rel="noopener">
@@ -646,17 +709,12 @@
       </div>
 
       <div class="contacto__map reveal">
-        <!-- Ubicación exacta: C/ San Jorge 41, Bañeres de Mariola (38.7159468, -0.6538607). Shortlink: https://maps.app.goo.gl/rSWwjLbhjp765R5q6 -->
-        <iframe
-          src="https://maps.google.com/maps?q=38.7159468,-0.6538607&t=&z=17&ie=UTF8&iwloc=&output=embed"
-          width="100%"
-          height="400"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Mapa de VIFIT en C/ San Jorge 41, Bañeres de Mariola"
-          allowfullscreen></iframe>
+        <a href="https://maps.app.goo.gl/rSWwjLbhjp765R5q6" target="_blank" rel="noopener" aria-label="Abrir la ubicación de VIFIT en Google Maps">
+          <img src="img/mapa-vifit.jpg" alt="Mapa con la ubicación de VIFIT en C/ San Jorge 41, Bañeres de Mariola" class="contacto__map-img" width="1100" height="400" loading="lazy">
+        </a>
+        <p class="contacto__map-credit">Mapa © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors</p>
       </div>
-      <p class="contacto__map-link reveal"><a href="https://maps.app.goo.gl/rSWwjLbhjp765R5q6" target="_blank" rel="noopener">Ver en Google Maps</a></p>
+      <p class="contacto__map-link reveal"><a href="https://maps.app.goo.gl/rSWwjLbhjp765R5q6" target="_blank" rel="noopener">Abrir en Google Maps</a></p>
     </div>
   </section>
 
@@ -669,7 +727,7 @@
       <h2 class="cta-final__title">¿Listo para<br>empezar?</h2>
       <p class="cta-final__sub">Las plazas son limitadas. Si lees esto, todavía queda una para ti.</p>
       <div class="cta-final__actions">
-        <a href="https://wa.me/34653656080" class="btn btn--dark" target="_blank" rel="noopener">Reservar por WhatsApp</a>
+        <a href="https://wa.me/34653656080?text=Hola%20Vicente%2C%20me%20interesa%20VIFIT" class="btn btn--primary" target="_blank" rel="noopener">Reservar por WhatsApp</a>
         <a href="mailto:vicentesanz.coach@gmail.com" class="btn btn--outline-white">Escribir un email</a>
       </div>
     </div>
@@ -685,12 +743,12 @@
           <a href="#hero" class="footer__logo" aria-label="VIFIT — Inicio">
             <img src="img/vifit-rotulo-isotipo-negro.svg" alt="VIFIT" class="footer__logo-img">
           </a>
-          <p class="footer__tagline">Centro de entrenamiento personal premium.<br>Bañeres de Mariola, Alicante.</p>
+          <p class="footer__tagline">Centro de entrenamiento personal premium.<br>C/ San Jorge, 41 · 03450 Banyeres de Mariola (Bañeres), Alicante.</p>
         </div>
         <div class="footer__col">
           <h4 class="footer__heading">Navegación</h4>
           <ul class="footer__links">
-            <li><a href="#metodo">VIFIT</a></li>
+            <li><a href="#metodo">Método</a></li>
             <li><a href="#para-quien">Para quién</a></li>
             <li><a href="#instalaciones">Instalaciones</a></li>
             <li><a href="#empezar">Empezar</a></li>
@@ -705,12 +763,13 @@
             <li><a href="https://wa.me/34653656080" target="_blank" rel="noopener">WhatsApp: 653 656 080</a></li>
             <li><a href="mailto:vicentesanz.coach@gmail.com">vicentesanz.coach@gmail.com</a></li>
             <li><a href="https://instagram.com/vicentesanz.coach" target="_blank" rel="noopener">@vicentesanz.coach</a></li>
-            <li><span>vifit.com</span></li>
+            <li><a href="https://vifit.vicentesanzcoach.com">vifit.vicentesanzcoach.com</a></li>
           </ul>
         </div>
       </div>
       <div class="footer__bottom">
         <p>© 2026 VIFIT · Todos los derechos reservados.</p>
+        <p class="footer__legal"><a href="aviso-legal.html">Aviso legal</a> · <a href="privacidad.html">Política de privacidad</a></p>
       </div>
     </div>
   </footer>
