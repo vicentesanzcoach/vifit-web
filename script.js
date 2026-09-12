@@ -4,7 +4,7 @@
 
 /* ═══════════════════════════════════════════════════════════════
    CONFIGURACIÓN GLOBAL
-   Cambiar a false cuando no se acepten nuevos atletas
+   Cambiar a false cuando no se acepten nuevos clientes
 ═══════════════════════════════════════════════════════════════ */
 const VIFIT_ACCEPTING_NEW_ATHLETES = true;
 

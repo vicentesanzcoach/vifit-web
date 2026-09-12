@@ -224,20 +224,15 @@ p {
   text-decoration: none;
 }
 
-.nav__logo-mark {
-  display: block;
-  height: 28px;
+.nav__logo-img {
+  height: 32px;
   width: auto;
+  display: block;
+  transition: opacity 0.3s ease;
 }
 
-.nav__logo-word {
-  font-family: Arial Black, 'Arial Narrow', Arial, sans-serif;
-  font-weight: 900;
-  font-style: italic;
-  font-size: 22px;
-  letter-spacing: 2px;
-  color: var(--black);
-  line-height: 1;
+.nav__logo:hover .nav__logo-img {
+  opacity: 0.8;
 }
 
 .nav__menu {
@@ -1633,22 +1628,14 @@ a.contacto__card:hover {
   text-decoration: none;
 }
 
-.footer__logo-mark {
-  display: block;
-  height: 28px;
+/* Footer oscuro (#111111): el logo negro se invierte a blanco */
+.footer__logo-img {
+  height: 40px;
   width: auto;
+  display: block;
+  margin-bottom: 16px;
   filter: brightness(0) invert(1);
-  opacity: 0.5;
-}
-
-.footer__logo-word {
-  font-family: Arial Black, Arial, sans-serif;
-  font-weight: 900;
-  font-style: italic;
-  font-size: 22px;
-  letter-spacing: 2px;
-  color: rgba(255, 255, 255, 0.5);
-  line-height: 1;
+  opacity: 0.85;
 }
 
 .footer__tagline {
@@ -1980,8 +1967,7 @@ a.contacto__card:hover {
   .nav__menu li { flex-shrink: 0; }
   .nav__link  { font-size: 12px; white-space: nowrap; }
   .nav__cta   { padding: 7px 12px; font-size: 12px; }
-  .nav__logo-mark { height: 24px; }
-  .nav__logo-word { font-size: 18px; letter-spacing: 1.5px; }
+  .nav__logo-img { height: 28px; }
 }
 
 /* ════════════════════════════════════════════════════════════════
@@ -2008,8 +1994,7 @@ a.contacto__card:hover {
     font-size: 12px;
   }
 
-  .nav__logo-mark { height: 24px; }
-  .nav__logo-word { font-size: 18px; letter-spacing: 1.5px; }
+  .nav__logo-img { height: 26px; }
 
   /* Full-screen menu overlay */
   .nav__menu.is-open {
