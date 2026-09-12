@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+._*
+
+# Editores / herramientas locales
+.claude/
+.vscode/
+.idea/
+
+# Node (por si se añade tooling en el futuro)
+node_modules/
+npm-debug.log*
+
+# Netlify local
+.netlify/
+
+# Temporales
+*.tmp
+*.log
